@@ -44,6 +44,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 999;
 }
 
 header {
@@ -58,7 +59,7 @@ header {
 header h1 {
     padding-top: 25vh;
     font-size: 5rem;
-    color: var(--color-primary);
+    color: white;
 }
 
 header p {
@@ -93,6 +94,11 @@ section img {
 
 .vision, .target, .purpose, .dev {
     margin: 1rem 0;
+}
+
+.vision, .target {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+    padding-bottom: 5rem;
 }
 
 .purpose ul, .dev ul{

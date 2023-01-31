@@ -2,22 +2,6 @@ html {
     font-size: 10px;
 }
 
-.vision, .target, .purpose, .dev {
-    display: flex;
-    justify-content: space-between;
-}
-
-.vision-box, .vision img,
-.target-box, .target img,
-.purpose-box, .purpose img,
-.dev-box, .dev img {
-    max-width: 45%;
-}
-
-.vision h1{
-    text-align: left;
-}
-
 section {
     padding: 5rem;
 }
@@ -29,4 +13,47 @@ section p, section li {
 
 section h2 {
     font-size: 3rem;
+}
+
+header p {
+    margin-top: 20vh;
+    font-weight: 300 !important;
+    font-size: 1.5rem;
+}
+
+.vision, .target, .purpose, .dev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vision, .target {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+    padding-bottom: 5rem;
+}
+
+.vision-box, .vision img,
+.target-box, .target img,
+.purpose-box, .purpose img,
+.dev-box, .dev img {
+    max-width: 45%;
+}
+
+.target-box {
+    /* order: 1; */
+}
+
+.vision h1{
+    text-align: left;
+}
+
+.vision img {
+    clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.target img {
+    /* clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%); */
+}
+
+.purpose img {
+    /* clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%); */
 }
