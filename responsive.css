@@ -1,0 +1,32 @@
+html {
+    font-size: 10px;
+}
+
+.vision, .target, .purpose, .dev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vision-box, .vision img,
+.target-box, .target img,
+.purpose-box, .purpose img,
+.dev-box, .dev img {
+    max-width: 45%;
+}
+
+.vision h1{
+    text-align: left;
+}
+
+section {
+    padding: 5rem;
+}
+
+section p, section li {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+section h2 {
+    font-size: 3rem;
+}

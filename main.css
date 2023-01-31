@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 * {
@@ -11,7 +11,7 @@
 
 :root {
     --color-primary: #ed1c23;
-    --color-secondary: #212121;
+    --color-secondary: #606060;
     --color-tertiary: #f5f5f5;
 }
 
@@ -28,6 +28,14 @@ h1, h2 {
     font-weight: 100;
 }
 
+b {
+    font-weight: 500;
+}
+
+p, li {
+    font-weight: 100;
+}
+
 nav {
     background-color: white;
     display: flex;
@@ -39,11 +47,12 @@ nav {
 }
 
 header {
-    min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("docs/imgs/1291845128.jpg");
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    min-height: 100vh;
+    padding-bottom: 1rem;
 }
 
 header h1 {
@@ -79,38 +88,23 @@ section p, section li {
 section img {
     width: 100%;
     margin: 1rem 0;
+    object-fit: contain;
 }
 
-.target {
-    margin: 1rem 0;   
-}
-
-.target h2 {
-    text-align: center;
-}
-
-.purpose {
+.vision, .target, .purpose, .dev {
     margin: 1rem 0;
 }
 
-.purpose ul{
+.purpose ul, .dev ul{
     margin: 0 2rem;
-}
-
-.dev {
-    margin: 1rem 0;
-}
-
-.dev ul{
-    margin: 0 2rem;
-}
-
-.dev ol {
-    margin-left: 2rem;
 }
 
 #dev {
     background-color: var(--color-tertiary);
+}
+
+.dev ol {
+    margin-left: 2rem;
 }
 
 footer {
@@ -118,6 +112,7 @@ footer {
 }
 
 footer p {
+    font-size: 1.5rem;
     line-height: 2rem;
     color: var(--color-secondary);
 }
