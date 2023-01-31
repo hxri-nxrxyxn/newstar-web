@@ -1,19 +1,18 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('http://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
-
-:root {
-    --color-primary: #f64646;
-    --color-primary-light: #ffe0e0;
-    --color-secondary: #333;
-    --color-white: #fff;
-    --color-black: #000;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik';
+:root {
+    --color-primary: #ed1c23;
+    --color-secondary: #212121;
+    --color-tertiary: #f5f5f5;
 }
 
 html {
@@ -21,144 +20,104 @@ html {
 }
 
 body {
-    /* background-color: black; */
+    /* background-color: red; */
 }
 
-p {
-    font-size: 1.5rem;
-    color: var(--color-black);
+h1, h2 {
+    font-family: 'DM Serif Display';
+    font-weight: 100;
 }
 
 nav {
-    min-height: 2vh;
-    background-color: var(--color-white);
+    background-color: white;
     display: flex;
-    position: sticky;
+    justify-content: space-around;
+    padding: 1rem 0;
+    position: fixed;
     top: 0;
-    border-bottom: 1px solid lightgrey;
-    z-index: 999;
-}
-
-nav img {
-    margin: auto;
-    padding: 0.5rem;
+    width: 100vw;
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(docs/imgs/1291845128.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     min-height: 100vh;
-    display: flex;
-    /* position: relative; COOL EFFECT*/ 
-}
-
-.header-box {
-    margin: auto auto 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url("docs/imgs/1291845128.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
 }
 
-.header-box * {
-    margin: 1rem;
+header h1 {
+    padding-top: 25vh;
+    font-size: 5rem;
+    color: var(--color-primary);
 }
 
-.header-box h1 {
-    color: var(--color-white);
-    font-size: 8rem;
-    font-family: 'DM Serif Display';
-    font-weight: 100;
-}
-
-.header-box img {
-    width: 36rem;
-}
-
-.header-box p {
-    margin-top: 18vh;
-    color: var(--color-white);
-    font-size: 1.2rem;
+header p {
+    padding-top: 10vh;
+    font-size: 1rem;
+    color: white;
 }
 
 section {
-    padding: 10rem 10rem;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 1rem 0;
 }
 
 section h1 {
-    font-family: 'DM Serif Display';
-    font-size: 6rem;
-    font-weight: 100;
+    text-align: center;
+    font-size: 4rem;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-}
-
-.columns {
-    display: flex;
-    justify-content: space-between;
-}
-
-.columns div, .columns img {
-    max-width: 50%;
-}
-
-.columns p {
+section p, section li {
     color: var(--color-secondary);
-    font-weight: 500;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 1rem 0;
 }
 
-.columns img {
-    object-fit: cover;
-    height: 50rem;
-    width: 50rem;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    border: 1px solid var(--color-primary);
+section img {
+    width: 100%;
+    margin: 1rem 0;
 }
 
-#target {
-    margin-left: 0;
-    background-color: var(--color-primary-light);
-    min-height: min-content;
-    padding: 5rem;
+.target {
+    margin: 1rem 0;   
 }
 
-#target {
+.target h2 {
     text-align: center;
 }
 
-#target p {
-    color: var(--color-secondary);
-}
-
-.columns ul {
-    font-size: 1.5rem;
-    margin-left: 2rem;
-}
-
-.columns li {
+.purpose {
     margin: 1rem 0;
-    list-style-type: circle;
-    color: var(--color-secondary);
-    line-height: 3rem;
 }
 
-.columns ol li{
+.purpose ul{
+    margin: 0 2rem;
+}
+
+.dev {
+    margin: 1rem 0;
+}
+
+.dev ul{
+    margin: 0 2rem;
+}
+
+.dev ol {
     margin-left: 2rem;
-    list-style-type:decimal;
+}
+
+#dev {
+    background-color: var(--color-tertiary);
 }
 
 footer {
-    background-color: var(--color-primary-light);
-    padding: 10rem;  
+    padding: 2rem;
 }
 
-footer h1 {
-    text-align: center;
-    font-size: 5rem;
-    font-family: 'DM Serif Display';
-    font-weight: 100;
-    letter-spacing: 10px;
-    color: var(--color-primary);
+footer p {
+    line-height: 2rem;
+    color: var(--color-secondary);
 }
